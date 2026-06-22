@@ -24,41 +24,41 @@ const DummyUser = () => {
   
   return (
     <div>
+        <h1 style={{textAlign:"center"}}>USERS-LIST</h1>
         <table border={1}>
             <thead>
                 <tr>
-                    <th>ID</th>
-                    <th>FIRSTNAME</th>
-                    <th>LASTNAME</th>
-                    <th>MAIDENNAME</th>
-                    <th>AGE</th>
-                    <th>GENDER</th>
-                    <th>EMAIL</th>
-                    <th>PHONE</th>
-                    <th>USERNAME</th>
-                    <th>PASSWORD</th>
-                    <th>BIRTHDATE</th>
-                    <th>IMAGE</th>
-                    <th>BLOODGROUP</th>
-                    <th>HEIGHT</th>
-                    <th>WEIGHT</th>
-                    <th>EYECOLOR</th>
-                    <th>HAIR</th>
-                    <th>IP</th>
-                    <th>ADDRESS</th>
-                    <th>COORDINATES</th>
-                    <th>MACADDRESS</th>
-                    <th>UNIVERSITY</th>
-                    <th>BANK</th>
-                    <th>COMPANY</th>
-                    <th>ADDRESS</th>
-                    <th>COORDINATES</th>
-                    <th>COUNTRY</th>
-                    <th>EIN</th>
-                    <th>SSN</th>
-                    <th>USERAGENT</th>
-                    <th>CRYPTO</th>
-                    <th>ROLE</th>
+                    <th style={{backgroundColor:"grey"}}>ID</th>
+                    <th style={{backgroundColor:"grey"}}>FIRSTNAME</th>
+                    <th style={{backgroundColor:"grey"}}>LASTNAME</th>
+                    <th style={{backgroundColor:"grey"}}>MAIDENNAME</th>
+                    <th style={{backgroundColor:"grey"}}>AGE</th>
+                    <th style={{backgroundColor:"grey"}}>GENDER</th>
+                    <th style={{backgroundColor:"grey"}}>EMAIL</th>
+                    <th style={{backgroundColor:"grey"}}>PHONE</th>
+                    <th style={{backgroundColor:"grey"}}>USERNAME</th>
+                    <th style={{backgroundColor:"grey"}}>PASSWORD</th>
+                    <th style={{backgroundColor:"grey"}}>BIRTHDATE</th>
+                    <th style={{backgroundColor:"grey"}}>IMAGE</th>
+                    <th style={{backgroundColor:"grey"}}>BLOODGROUP</th>
+                    <th style={{backgroundColor:"grey"}}>HEIGHT</th>
+                    <th style={{backgroundColor:"grey"}}>WEIGHT</th>
+                    <th style={{backgroundColor:"grey"}}>EYECOLOR</th>
+                    <th style={{backgroundColor:"grey"}}>HAIR</th>
+                    <th style={{backgroundColor:"grey"}}>IP</th>
+                    <th style={{backgroundColor:"grey"}}>ADDRESS</th>
+                    <th style={{backgroundColor:"grey"}}>COORDINATES</th>
+                    <th style={{backgroundColor:"grey"}}>MACADDRESS</th>
+                    <th style={{backgroundColor:"grey"}}>UNIVERSITY</th>
+                    <th style={{backgroundColor:"grey"}}>BANK</th>
+                    <th style={{backgroundColor:"grey"}}>COMPANY</th>
+                    <th style={{backgroundColor:"grey"}}>ADDRESS</th>
+                    <th style={{backgroundColor:"grey"}}>COORDINATES</th>
+                    <th style={{backgroundColor:"grey"}}>EIN</th>
+                    <th style={{backgroundColor:"grey"}}>SSN</th>
+                    <th style={{backgroundColor:"grey"}}>USERAGENT</th>
+                    <th style={{backgroundColor:"grey"}}>CRYPTO</th>
+                    <th style={{backgroundColor:"grey"}}>ROLE</th>
                 </tr>
             </thead>
             <tbody>
@@ -87,6 +87,15 @@ const DummyUser = () => {
                             <td>{i.address.coordinates.lat}, {i.address.coordinates.lng}</td>
                             <td>{i.macAddress}</td>
                             <td>{i.university}</td>
+                            <td>{i.bank.cardExpire}, {i.bank.cardNumber}, {i.bank.cardType}, {i.bank.currency}, {i.bank.iban}</td>
+                            <td>{i.company.department}, {i.company.name}, {i.company.title}</td>
+                            <td>{i.company.address.address}, {i.company.address.city}, {i.company.address.state}, {i.company.address.stateCode}, {i.company.address.postalCode}, {i.company.address.country}</td>
+                            <td>{i.company.address.coordinates.lat}, {i.company.address.coordinates.lng}</td>
+                            <td>{i.ein}</td>
+                            <td>{i.ssn}</td>
+                            <td>{i.userAgent}</td>
+                            <td>{i.crypto.coin}, {i.crypto.wallet}, {i.crypto.network}</td>
+                            <td>{i.role}</td>
                         </tr>
                     ))
                 }
