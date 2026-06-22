@@ -81,7 +81,12 @@ const DummyUser = () => {
                             <td>{i.height}</td>
                             <td>{i.weight}</td>
                             <td>{i.eyeColor}</td>
-                            {/* <td>{i.address.coordinates.lat}</td> */}
+                            <td>{i.hair.color}, {i.hair.type}</td>
+                            <td>{i.ip}</td>
+                            <td>{i.address.address}, {i.address.city}, {i.address.state}, {i.address.stateCode}, {i.address.postalCode}, {i.address.country}</td>
+                            <td>{i.address.coordinates.lat}, {i.address.coordinates.lng}</td>
+                            <td>{i.macAddress}</td>
+                            <td>{i.university}</td>
                         </tr>
                     ))
                 }
