@@ -1,0 +1,114 @@
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #272b33;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  padding: 81px 0px;
+  flex-wrap: wrap;
+}
+
+.card{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 25px;
+    color: white;
+    width: calc(50% - 30px); /* 2 cards per row */
+    max-width: 600px;
+    height: 220px;
+    overflow: hidden;
+    background-color: rgb(60, 62, 68);
+    border-radius: 0.5rem;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px;
+}
+
+
+/* Bigger image */
+.left img {
+  width: 229px;
+  height: 100%;
+  object-fit: cover;
+  border-top-left-radius: 12px;
+  border-end-start-radius: 12px;
+
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  text-align: left; 
+  width: 100%; 
+  flex: 3 1 0%;
+  position: relative;
+  padding: 13px 13px 13px 13px;
+}
+.section{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+     margin-bottom: 20px;
+    /* flex: unset; */
+}
+/* Bigger text */
+.right h1 {
+    color: #F5F5F5;
+    font-size: 27px;
+    margin: 0;
+    padding: 0;
+    border-bottom: none;
+}
+.right h1:hover{
+    cursor: pointer;
+    color: rgb(255, 152, 0);
+    transition: 0.3s;
+}
+.sub {
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+    font-size: 16px;
+    font-weight: 500;
+    color: #ffffff;
+}
+.sub span {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  margin-right: 6px;
+  background-color: #d63d2e;
+}
+.label {
+    color: #9e9e9e;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.value {
+    color: #f5f5f5;
+    font-size: 15px;
+    margin-top: 2px;
+    margin-bottom: 12px;
+}
+.value:hover{
+    color: rgb(255, 152, 0);
+    transition: 0.3s;
+    cursor: pointer;
+}
+/* Status colors */
+.alive {
+  margin-top: 6px;
+  background: #4caf50;
+}
+
+.dead {
+  margin-top: 6px;
+  background: #e53935;
+}
+
+.unknown {
+  margin-top: 6px;
+  background: #9e9e9e;
+}
