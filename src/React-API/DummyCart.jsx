@@ -40,7 +40,21 @@ const DummyCart = () => {
                         {
                             list.map((i, index) =>(
                                 <tr key={index}>
-                                    <td>{i.id}</td>
+                                    <td>{i.id}</td>                   
+                                    <td>
+                                    {
+                                        i.products.map((p, idx) => (
+                                        <div key={idx}>
+                                        {p.id}, {p.title}, {p.price}, {p.quantity}, {p.total}, {p.discountPercentage}, {p.discountedTotal}, {p.thumbnail}
+                                        </div>
+                                        ))
+                                    }
+                                </td>
+                                <td>{i.total}</td>
+                                <td>{i.discountedTotal}</td>
+                                <td>{i.userId}</td>
+                                <td>{i.totalProducts}</td>
+                                <td>{i.totalQuantity}</td>
                                 </tr>
                             ))
                         }
