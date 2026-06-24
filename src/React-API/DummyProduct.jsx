@@ -22,33 +22,32 @@ const DummyProduct = () => {
     }, [count])
   return (
     <div>
-        <h1 style={{textAlign:"center", backgroundColor:"purple", color:"lightyellow", height:"50px", width:"115%"}}>Product-List</h1>
-        <br></br>
+        <h1 style={{textAlign:"center"}}>PRODUCT-LIST</h1>
         <table border={1}>
             <thead>
                 <tr>
-                    <th>ID</th>
-                    <th>TITLE</th>
-                    <th>DESCRIPTION</th>
-                    <th>CATEGORY</th>
-                    <th>PRICE</th>
-                    <th>DISCOUNTPERCENTAGE</th>
-                    <th>RATING</th>
-                    <th>STOCK</th>
-                    <th>TAGS</th>
-                    <th>BRAND</th>
-                    <th>SKU</th>
-                    <th>WEIGHT</th>
-                    <th>DIMENSIONS</th>
-                    <th>WARRANTYINFORMATION</th>
-                    <th>SHIPPINGINFORMATION</th>
-                    <th>AVAILABILITYSTATUS</th>
-                    <th>REVIEWS</th>
-                    <th>RETURNPOLICY</th>
-                    <th>MINIMUMORDERQUANTITY</th>
-                    <th>META</th>
-                    <th>IMAGES</th>
-                    <th>THUMBNAIL</th>
+                    <th style={{backgroundColor:"grey"}}>ID</th>
+                    <th style={{backgroundColor:"grey"}}>TITLE</th>
+                    <th style={{backgroundColor:"grey"}}>DESCRIPTION</th>
+                    <th style={{backgroundColor:"grey"}}>CATEGORY</th>
+                    <th style={{backgroundColor:"grey"}}>PRICE</th>
+                    <th style={{backgroundColor:"grey"}}>DISCOUNTPERCENTAGE</th>
+                    <th style={{backgroundColor:"grey"}}>RATING</th>
+                    <th style={{backgroundColor:"grey"}}>STOCK</th>
+                    <th style={{backgroundColor:"grey"}}>TAGS</th>
+                    <th style={{backgroundColor:"grey"}}>BRAND</th>
+                    <th style={{backgroundColor:"grey"}}>SKU</th>
+                    <th style={{backgroundColor:"grey"}}>WEIGHT</th>
+                    <th style={{backgroundColor:"grey"}}>DIMENSIONS</th>
+                    <th style={{backgroundColor:"grey"}}>WARRANTYINFORMATION</th>
+                    <th style={{backgroundColor:"grey"}}>SHIPPINGINFORMATION</th>
+                    <th style={{backgroundColor:"grey"}}>AVAILABILITYSTATUS</th>
+                    {/* <th>REVIEWS</th> */}
+                    <th style={{backgroundColor:"grey"}}>RETURNPOLICY</th>
+                    <th style={{backgroundColor:"grey"}}>MINIMUMORDERQUANTITY</th>
+                    <th style={{backgroundColor:"grey"}}>META</th>
+                    <th style={{backgroundColor:"grey"}}>IMAGES</th>
+                    <th style={{backgroundColor:"grey"}}>THUMBNAIL</th>
                 </tr>
             </thead>
             <tbody>
@@ -71,8 +70,11 @@ const DummyProduct = () => {
                                 <td>{i.warrantyInformation}</td>
                                 <td>{i.shippingInformation}</td>
                                 <td>{i.availabilityStatus}</td>
-                                <td></td>
-                                <td></td>
+                                <td>{i.returnPolicy}</td>
+                                <td>{i.minimumOrderQuantity}</td>
+                                <td>{i.meta.createdAt}, {i.meta.updatedAt}, {i.meta.barcode}, {i.meta.qrCode}</td>
+                                <td>{i.images}</td>
+                                <td>{i.thumbnail}</td>
                             </tr>
                         ))
                     }

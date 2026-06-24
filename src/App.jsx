@@ -37,7 +37,15 @@ import logo from './logo.svg';
 // import Todo from './React-API/Todo'
 // import User from './React-API/User'
 // import DummyProduct from './React-API/DummyProduct'
-import DummyUser from './React-API/DummyUser'
+// import DummyUser from './React-API/DummyUser'
+// import DummyComment from './React-API/DummyComment'
+// import DummyTodo from './React-API/DummyTodo'
+// import DummyCart from './React-API/DummyCart'
+// import DummyPost from './React-API/DummyPost'
+// import DummyQuote from './React-API/DummyQuote'
+import DummyRecipe from './React-API/DummyRecipe'
+// import PostmanApi from './Software-Postman/PostmanApi'
+// import PostmanApi2 from './Software-Postman/PostmanApi2'
 function App() {
   return (
     <div className="App">
@@ -142,7 +150,15 @@ function App() {
             {/* <Todo></Todo> */}
             {/* <User></User> */}
             {/* <DummyProduct></DummyProduct> */}
-            <DummyUser></DummyUser>
+            {/* <DummyUser></DummyUser> */}
+            {/* <DummyComment></DummyComment> */}
+            {/* <DummyTodo></DummyTodo> */}
+            {/* <DummyCart></DummyCart> */}
+            {/* <DummyPost></DummyPost> */}
+            {/* <DummyQuote></DummyQuote> */}
+            <DummyRecipe></DummyRecipe>
+            {/* <PostmanApi></PostmanApi> */}
+            {/* <PostmanApi2></PostmanApi2> */}
     </div>
   );
 }
