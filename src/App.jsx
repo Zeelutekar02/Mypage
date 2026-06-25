@@ -1,4 +1,5 @@
 import logo from './logo.svg';
+import Firstfile from './UseContext-Hook/Firstfile';
 // import './App.css';
 // import Firstfile from './Firstfile'
 // import Props from './Props'
@@ -40,12 +41,16 @@ import logo from './logo.svg';
 // import DummyUser from './React-API/DummyUser'
 // import DummyComment from './React-API/DummyComment'
 // import DummyTodo from './React-API/DummyTodo'
-import DummyCart from './React-API/DummyCart'
+// import DummyCart from './React-API/DummyCart'
 // import DummyPost from './React-API/DummyPost'
 // import DummyQuote from './React-API/DummyQuote'
 // import DummyRecipe from './React-API/DummyRecipe'
 // import PostmanApi from './Software-Postman/PostmanApi'
 // import PostmanApi2 from './Software-Postman/PostmanApi2'
+// import UseContext from './UseContext-Hook/UseContext'
+import UserProvider from "./UseContext-Hook/UserContext";
+import Login from "./UseContext-Hook/Login";
+import Profile from "./UseContext-Hook/Profile";
 function App() {
   return (
     <div className="App">
@@ -153,12 +158,18 @@ function App() {
             {/* <DummyUser></DummyUser> */}
             {/* <DummyComment></DummyComment> */}
             {/* <DummyTodo></DummyTodo> */}
-            <DummyCart></DummyCart>
+            {/* <DummyCart></DummyCart> */}
             {/* <DummyPost></DummyPost> */}
             {/* <DummyQuote></DummyQuote> */}
             {/* <DummyRecipe></DummyRecipe> */}
             {/* <PostmanApi></PostmanApi> */}
             {/* <PostmanApi2></PostmanApi2> */}
+            {/* <UseContext></UseContext> */}
+            <UserProvider>
+              <Login />
+              <Profile />
+            </UserProvider>
+            
     </div>
   );
 }
