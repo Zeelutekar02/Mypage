@@ -88,7 +88,7 @@ const ExDeleteupdate = () => {
         resetForm()
     }
 
-    const deleteData = (id) =>{
+    const deleteData = (id) =>{   
         axios.delete(`https://generateapi.techsnack.online/api/MyAPI/${id}`, {
             headers :{
                 Authorization : token
