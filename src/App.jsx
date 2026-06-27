@@ -1,5 +1,5 @@
 import logo from './logo.svg';
-import Firstfile from './UseContext-Hook/Firstfile';
+// import Firstfile from './UseContext-Hook/Firstfile';
 // import './App.css';
 // import Firstfile from './Firstfile'
 // import Props from './Props'
@@ -47,10 +47,12 @@ import Firstfile from './UseContext-Hook/Firstfile';
 // import DummyRecipe from './React-API/DummyRecipe'
 // import PostmanApi from './Software-Postman/PostmanApi'
 // import PostmanApi2 from './Software-Postman/PostmanApi2'
+// import DeleteUpdateApi from './Software-Postman/DeleteUpdateApi'
+import ExDeleteUpdate from './Software-Postman/ExDeleteupdate'
 // import UseContext from './UseContext-Hook/UseContext'
-import UserProvider from "./UseContext-Hook/UserContext";
-import Login from "./UseContext-Hook/Login";
-import Profile from "./UseContext-Hook/Profile";
+// import UserProvider from "./UseContext-Hook/UserContext";
+// import Login from "./UseContext-Hook/Login";
+// import Profile from "./UseContext-Hook/Profile";
 function App() {
   return (
     <div className="App">
@@ -164,11 +166,13 @@ function App() {
             {/* <DummyRecipe></DummyRecipe> */}
             {/* <PostmanApi></PostmanApi> */}
             {/* <PostmanApi2></PostmanApi2> */}
+            {/* <DeleteUpdateApi></DeleteUpdateApi> */}
+            <ExDeleteUpdate></ExDeleteUpdate>
             {/* <UseContext></UseContext> */}
-            <UserProvider>
+            {/* <UserProvider>
               <Login />
               <Profile />
-            </UserProvider>
+            </UserProvider> */}
             
     </div>
   );

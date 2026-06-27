@@ -19,7 +19,7 @@ const PostmanApi2 = () => {
 
     function dataView()
     {
-        axios.get('https://generateapi.techsnack.online/api/Mycollection', {
+        axios.get('https://generateapi.techsnack.online/api/Mycollection',{
             headers :{
                 Authorization : token
             }
@@ -62,19 +62,21 @@ const PostmanApi2 = () => {
             </Form>
         </Formik>
 
-        <table style={{border:'1px solid'}}>
-            <thead style={{border:"1px solid"}}>
+        <table style={{border:'1px dashed'}}>
+            <thead style={{border:"1px dashed"}}>
                 <tr>
-                    <th style={{border:"1px solid"}}>AGE</th>
+                    <th style={{border:"1px dashed"}}>AGE</th>
                     <th>GENDER</th>
+                    {/* <th>Date of birth</th> */}
+                    {/* <th>password</th> */}
                 </tr>
             </thead>
             <tbody>
                 {
                     list.map((i, index) =>(
                         <tr key={index}>
-                            <td style={{border:"1px solid"}}>{i.Age}</td>
-                            <td style={{border:"1px solid"}}>{i.Gender}</td>
+                            <td style={{border:"1px dashed"}}>{i.Age}</td>
+                            <td style={{border:"1px dashed"}}>{i.Gender}</td>
                         </tr>
                     ))
                 }
