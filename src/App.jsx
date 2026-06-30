@@ -48,11 +48,14 @@ import logo from './logo.svg';
 // import PostmanApi from './Software-Postman/PostmanApi'
 // import PostmanApi2 from './Software-Postman/PostmanApi2'
 // import DeleteUpdateApi from './Software-Postman/DeleteUpdateApi'
-import ExDeleteUpdate from './Software-Postman/ExDeleteupdate'
+// import ExDeleteUpdate from './Software-Postman/ExDeleteupdate'
+// import Ex2deleteupdateApi from './Software-Postman/Ex2deleteupdateApi'
 // import UseContext from './UseContext-Hook/UseContext'
 // import UserProvider from "./UseContext-Hook/UserContext";
 // import Login from "./UseContext-Hook/Login";
 // import Profile from "./UseContext-Hook/Profile";
+import CRUDuseContext from "./UseContext-Hook/CRUDuseContext"
+import CreateRead from "./UseContext-Hook/CreateRead"
 function App() {
   return (
     <div className="App">
@@ -167,13 +170,16 @@ function App() {
             {/* <PostmanApi></PostmanApi> */}
             {/* <PostmanApi2></PostmanApi2> */}
             {/* <DeleteUpdateApi></DeleteUpdateApi> */}
-            <ExDeleteUpdate></ExDeleteUpdate>
+            {/* <ExDeleteUpdate></ExDeleteUpdate> */}
+            {/* <Ex2deleteupdateApi></Ex2deleteupdateApi> */}
             {/* <UseContext></UseContext> */}
             {/* <UserProvider>
               <Login />
               <Profile />
             </UserProvider> */}
-            
+            <CRUDuseContext>   
+            <CreateRead />  
+            </CRUDuseContext>      
     </div>
   );
 }

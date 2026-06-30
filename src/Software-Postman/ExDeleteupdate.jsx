@@ -22,7 +22,7 @@ const ExDeleteupdate = () => {
 
     useEffect(() =>{
         data()
-    }, [])
+    }, [])   
 
     function data()
     {
@@ -37,7 +37,7 @@ const ExDeleteupdate = () => {
         })
         .catch((error) =>{
             console.log(error);
-        })
+         })
     }
 
     const handleSubmit = (values, {resetForm}) =>{
