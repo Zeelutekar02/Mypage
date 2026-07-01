@@ -27,7 +27,8 @@ const CreateRead = () => {
             mobileno,
             emailid
         }
-        setList(...list, obj)
+
+        setList([...list, obj])
 
         console.log(name);
         console.log(surname);
@@ -47,52 +48,52 @@ const CreateRead = () => {
         setAddress("")
         setMobileNo("")
         setEmailID("")
-    }
+    }   
   return (
     <div>
             <input type="text" placeholder="Name" value={name} onChange={(e) =>setName(e.target.value)}></input>
             <br></br>
             <input type="text" placeholder="Surname" value={surname} onChange={(e) =>setSurname(e.target.value)}></input>
             <br></br>
-            <input type="text" placeholder="DOB" value={dob} onChange={(e) =>setSurname(e.target.value)}></input>
+            <input type="text" placeholder="DOB" value={dob} onChange={(e) =>setDOB(e.target.value)}></input>
             <br></br>
-            <input type="text" placeholder="Age" value={age} onChange={(e) =>setSurname(e.target.value)}></input>
+            <input type="text" placeholder="Age" value={age} onChange={(e) =>setAge(e.target.value)}></input>
             <br></br>
-            <input type="text" placeholder="Gender" value={gender} onChange={(e) =>setSurname(e.target.value)}></input>
+            <input type="text" placeholder="Gender" value={gender} onChange={(e) =>setGender(e.target.value)}></input>
             <br></br>
-            <input type="text" placeholder="Address" value={address} onChange={(e) =>setSurname(e.target.value)}></input>
+            <input type="text" placeholder="Address" value={address} onChange={(e) =>setAddress(e.target.value)}></input>
             <br></br>
-            <input type="text" placeholder="Mobile-No" value={mobileno} onChange={(e) =>setSurname(e.target.value)}></input>
+            <input type="text" placeholder="Mobile-No" value={mobileno} onChange={(e) =>setMobileNo(e.target.value)}></input>
             <br></br>
-            <input type="text" placeholder="Email-ID" value={emailid} onChange={(e) =>setSurname(e.target.value)}></input>
+            <input type="text" placeholder="Email-ID" value={emailid} onChange={(e) =>setEmailID(e.target.value)}></input>
             <br></br>
             <button onClick={handleSubmit}>SUBMIT</button>
 
-            <table border={1}>
-                <thead>
+            <table border={1} style={{border:"3px solid darkgreen"}}>
+                <thead style={{border:"2px solid darkgreen"}}>
                     <tr>
-                        <td>NAME</td>
-                        <td>SURNAME</td>
-                        <td>DOB</td>
-                        <td>AGE</td>
-                        <td>GENDER</td>
-                        <td>ADDRESS</td>
-                        <td>MOBILE-NO</td>
-                        <td>EMAIL-ID</td>
+                        <td style={{border:"2px solid darkgreen"}}>NAME</td>
+                        <td style={{border:"2px solid darkgreen"}}>SURNAME</td>
+                        <td style={{border:"2px solid darkgreen"}}>DOB</td>
+                        <td style={{border:"2px solid darkgreen"}}>AGE</td>
+                        <td style={{border:"2px solid darkgreen"}}>GENDER</td>
+                        <td style={{border:"2px solid darkgreen"}}>ADDRESS</td>
+                        <td style={{border:"2px solid darkgreen"}}>MOBILE-NO</td>
+                        <td style={{border:"2px solid darkgreen"}}>EMAIL-ID</td>
                     </tr>
                 </thead>
                 <tbody>
                     {
                         list.map((i, index) =>(
                             <tr key={index}>
-                                <td>{i.name}</td>
-                                <td>{i.surname}</td>
-                                <td>{i.dob}</td>
-                                <td>{i.age}</td>
-                                <td>{i.gender}</td>
-                                <td>{i.address}</td>
-                                <td>{i.mobileno}</td>
-                                <td>{i.emailid}</td>
+                                <td style={{border:"2px solid darkgreen"}}>{i.name}</td>
+                                <td style={{border:"2px solid darkgreen"}}>{i.surname}</td>
+                                <td style={{border:"2px solid darkgreen"}}>{i.dob}</td>
+                                <td style={{border:"2px solid darkgreen"}}>{i.age}</td>
+                                <td style={{border:"2px solid darkgreen"}}>{i.gender}</td>
+                                <td style={{border:"2px solid darkgreen"}}>{i.address}</td>
+                                <td style={{border:"2px solid darkgreen"}}>{i.mobileno}</td>
+                                <td style={{border:"2px solid darkgreen"}}>{i.emailid}</td>
 
                             </tr>
                         ))

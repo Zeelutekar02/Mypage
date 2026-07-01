@@ -1,5 +1,6 @@
 import React, {createContext, useState} from "react"
-import CreateRead from "./CreateRead"
+// import CreateRead from "./CreateRead"
+import DeleteUpdate from "./DeleteUpdate"
 
 export const CrudContext = createContext()
 const CRUDuseContext = () => {
@@ -7,9 +8,10 @@ const CRUDuseContext = () => {
     const [list, setList] = useState([])
   return (
     <div>
-        <CrudContext value={{list, setList}}>
-            <CreateRead /> 
-        </CrudContext>      
+        <CrudContext.Provider value={{list, setList}}>
+            {/* <CreateRead />  */}
+            <DeleteUpdate />
+        </CrudContext.Provider>      
     </div>
   )
 }

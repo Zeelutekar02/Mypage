@@ -55,7 +55,8 @@ import logo from './logo.svg';
 // import Login from "./UseContext-Hook/Login";
 // import Profile from "./UseContext-Hook/Profile";
 import CRUDuseContext from "./UseContext-Hook/CRUDuseContext"
-import CreateRead from "./UseContext-Hook/CreateRead"
+// import CreateRead from "./UseContext-Hook/CreateRead"
+import DeleteUpdate from "./UseContext-Hook/DeleteUpdate"
 function App() {
   return (
     <div className="App">
@@ -178,7 +179,8 @@ function App() {
               <Profile />
             </UserProvider> */}
             <CRUDuseContext>   
-            <CreateRead />  
+            {/* <CreateRead /> */}
+              <DeleteUpdate />
             </CRUDuseContext>      
     </div>
   );
