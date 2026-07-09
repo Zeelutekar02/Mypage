@@ -9,7 +9,7 @@ const UpdateDeleteFormik = ()=>{
     })
     const [list, setList] = useState([])
     const [editId, setEditId] = useState(null)
-
+    
     const f = useFormik({
         enableReinitialize : true,
         initialValues : ini,

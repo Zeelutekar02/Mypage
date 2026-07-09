@@ -54,9 +54,12 @@ import logo from './logo.svg';
 // import UserProvider from "./UseContext-Hook/UserContext";
 // import Login from "./UseContext-Hook/Login";
 // import Profile from "./UseContext-Hook/Profile";
-import CRUDuseContext from "./UseContext-Hook/CRUDuseContext"
+// import CRUDuseContext from "./UseContext-Hook/CRUDuseContext"
 // import CreateRead from "./UseContext-Hook/CreateRead"
-import DeleteUpdate from "./UseContext-Hook/DeleteUpdate"
+// import DeleteUpdate from "./UseContext-Hook/DeleteUpdate"
+// import ButtonUI from "./REDUX/ButtonUI"
+import OddEven from "./REDUX/OddEven"
+// import LikeDislike from "./REDUX/LikeDislike"
 function App() {
   return (
     <div className="App">
@@ -71,7 +74,7 @@ function App() {
          {/* {<Props value={{name:"Zeel", age:"20"}}></Props>}
 
          {<Props value = {[{name:"Zeel", age:"20"}, {name:"Bhumi", age:"23"}, {name:"Jay", age:"13"}, {name:"Santosh", age:"51"}]}></Props> } */}
-{/* <Pr         ops view = {[{schoolname:"vivek vidhyalay", studentname:"zeel utekar", Age:"20", Dob:"01-12-2006", Gender:"Female"}]}></Props>  */}
+        {/*  <Props view = {[{schoolname:"vivek vidhyalay", studentname:"zeel utekar", Age:"20", Dob:"01-12-2006", Gender:"Female"}]}></Props>  */}
 
          {/* <StateExample></StateExample> */}
           
@@ -178,10 +181,13 @@ function App() {
               <Login />
               <Profile />
             </UserProvider> */}
-            <CRUDuseContext>   
-            {/* <CreateRead /> */}
+            {/* <CRUDuseContext>   
+            <CreateRead />
               <DeleteUpdate />
-            </CRUDuseContext>      
+            </CRUDuseContext>*/}
+            {/* <ButtonUI></ButtonUI> */}
+            <OddEven></OddEven>
+            {/* <LikeDislike></LikeDislike> */}
     </div>
   );
 }

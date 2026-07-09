@@ -8,7 +8,6 @@ const DeleteUpdate = () => {
     const {list, setList} = useContext(CrudContext)
     const [editId, setEditId] = useState(null)
 
-
     const [name, setName] = useState("")
     const [surname, setSurname] = useState("")
     const [dob, setDOB] = useState("")
@@ -74,7 +73,7 @@ const DeleteUpdate = () => {
         setAddress("")
         setReligion("")
         setMobileNO("")
-        setEmailID("") 
+        setEmailID("")
     }
 
     const updateData = (item, index) =>{
@@ -167,7 +166,7 @@ const DeleteUpdate = () => {
                                     <button onClick={() =>updateData(i, index)}>UPDATE</button>
                                 </td>
                                 <td style={{border:"3px solid purple"}}>
-                                    <button onClick={() =>deleteData(index)}>DELETE</button>
+                                     <button onClick={() =>deleteData(index)}>DELETE</button>
                                 </td>
                             </tr>
                         ))

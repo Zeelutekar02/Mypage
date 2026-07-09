@@ -9,15 +9,43 @@ const Studentresult = () => {
   const [socialscience, setSocialscience] = useState("");
   const [hindi, setHindi] = useState("");
   const [computer, setComputer] = useState("");
-  const [total, setTotal] = useState("");
+  const [total, setTotal] = useState(0);
   const [result, setResult] = useState("");
   const [list, setList] = useState([]);
    const [editId , setEditId] = useState(null)
 
   const handleSubmit = () => {
-    const obj = { name, maths, science, english, gujarati, socialscience, hindi, computer, total, result};
+    
+    const total =
+        Number(maths) +
+        Number(science) +
+        Number(english) +
+        Number(gujarati) +
+        Number(socialscience) +
+        Number(hindi) +
+        Number(computer);
+        setTotal(total)
 
- if(editId != null)
+        let All ="";
+        if(
+          Number (maths) >=35 && 
+          Number (science) >=35 && 
+          Number (english) >=35 && 
+          Number (gujarati) >=35 && 
+          Number (socialscience) >=35 && 
+          Number (hindi) >=35 && 
+          Number (computer) >=35)
+        {
+            All ="PASS";
+        }
+        else
+        {
+            All ="FAIL";
+        }
+
+    const obj = { name, maths, science, english, gujarati, socialscience, hindi, computer, total, result: All};
+
+        if(editId != null)
         {
             let copyData = [...list]
             copyData[editId] = obj
@@ -54,6 +82,7 @@ const Studentresult = () => {
         setSocialscience(item.socialscience)
         setHindi(item.hindi)
         setComputer(item.computer)
+        
         setEditId(index)
     }
 
@@ -67,20 +96,7 @@ const Studentresult = () => {
             // setSocialscience("");
             // setHindi("");
             // setComputer("");
-
-  const handleAdd = ()=>{
-    const total =
-        Number(maths) +
-        Number(science) +
-        Number(english) +
-        Number(gujarati) +
-        Number(socialscience) +
-        Number(hindi) +
-        Number(computer);
-
-        const result =
-        Number(maths) >=35 && Number(science) >=35 && Number(english) >=35 && Number(gujarati) >=35 && Number(socialscience) >=35 && Number(hindi) >=35 && Number(computer) >=35 ?"Pass" :"Fail";
-}
+  
 
   return (
     <>
@@ -96,7 +112,7 @@ const Studentresult = () => {
         <br></br><br></br>
 
         <input
-        //   type="number"
+          type="number"
           onChange={(e) => setMaths(e.target.value)}
           value={maths}
           placeholder="Enter Maths Marks"
@@ -104,15 +120,17 @@ const Studentresult = () => {
         <br></br><br></br>
 
         <input
-        //   type="number"
+          type="number"
           onChange={(e) => setScience(e.target.value)}
           value={science}
           placeholder="Enter Science Marks"
         />
         <br></br><br></br>
 
-        <input
-        //   type="number"
+        {/* redux24 */}
+
+        <input 
+          type="number"
           onChange={(e) => setEnglish(e.target.value)}
           value={english}
           placeholder="Enter English Marks"
@@ -120,7 +138,7 @@ const Studentresult = () => {
         <br></br><br></br>
 
         <input
-        //   type="number"
+          type="number"
           onChange={(e) => setGujarati(e.target.value)}
           value={gujarati}
           placeholder="Enter Gujarati Makrs"
@@ -128,7 +146,7 @@ const Studentresult = () => {
         <br></br><br></br>
 
         <input
-        //   type="number"
+          type="number"
           onChange={(e) => setSocialscience(e.target.value)}
           value={socialscience}
           placeholder="Enter Socialscience Marks"
@@ -136,7 +154,7 @@ const Studentresult = () => {
         <br></br><br></br>
 
         <input
-        //   type="number"
+          type="number"
           onChange={(e) => setHindi(e.target.value)}
           value={hindi}
           placeholder="Enter Hindi Marks"
@@ -144,51 +162,52 @@ const Studentresult = () => {
         <br></br><br></br>
 
         <input
-        //   type="number"
+          type="number"
           onChange={(e) => setComputer(e.target.value)}
           value={computer}
           placeholder="Enter Computer Marks "
         />
         <br></br><br></br>
 
-        <button onClick={handleSubmit}>Submit</button>  <br></br><br></br>
+        <button onClick={handleSubmit}>Submit</button>
+        <br></br><br></br>
 
-        <table>
-          <thead>
+        <table style={{border:"1px solid black"}}>
+          <thead style={{border:"1px solid black"}}>
             <tr>
-              <td>Name</td>
-              <td>Maths</td>
-              <td>Science</td>
-              <td>English</td>
-              <td>Gujarati</td>
-              <td>Socialscience</td>
-              <td>Hindi</td>
-              <td>Computer</td>
-              <td>Total</td>
-              <td>Result</td>
-              <td>UPDATE</td>
-              <td>DELETE</td>
+              <td style={{border:"1px solid black"}}>Name</td>
+              <td style={{border:"1px solid black"}}>Maths</td>
+              <td style={{border:"1px solid black"}}>Science</td>
+              <td style={{border:"1px solid black"}}>English</td>
+              <td style={{border:"1px solid black"}}>Gujarati</td>
+              <td style={{border:"1px solid black"}}>Socialscience</td>
+              <td style={{border:"1px solid black"}}>Hindi</td>
+              <td style={{border:"1px solid black"}}>Computer</td>
+              <td style={{border:"1px solid black"}}>Total</td>
+              <td style={{border:"1px solid black"}}>Result</td>
+              <td style={{border:"1px solid black"}}>UPDATE</td>
+              <td style={{border:"1px solid black"}}>DELETE</td>
             </tr>
           </thead>
 
           <tbody>
             {list.map((i, index) => (
               <tr key={index}>
-                <td>{i.name}</td>
-                <td>{i.maths}</td>
-                <td>{i.science}</td>
-                <td>{i.english}</td>
-                <td>{i.gujarat}</td>
-                <td>{i.socialscience}</td>
-                <td>{i.hindi}</td>
-                <td>{i.computer }</td>
-                <td>{i.totla }</td>
-                <td>{i.result }</td>
-                <td>
-                    <button onClick={() => deleteData(index)}>DELETE</button>
+                <td style={{border:"1px solid black"}}>{i.name}</td>
+                <td style={{border:"1px solid black"}}>{i.maths}</td>
+                <td style={{border:"1px solid black"}}>{i.science}</td>
+                <td style={{border:"1px solid black"}}>{i.english}</td>
+                <td style={{border:"1px solid black"}}>{i.gujarati}</td>
+                <td style={{border:"1px solid black"}}>{i.socialscience}</td>
+                <td style={{border:"1px solid black"}}>{i.hindi}</td>
+                <td style={{border:"1px solid black"}}>{i.computer }</td>
+                <td style={{border:"1px solid black"}}>{i.total}</td>
+                <td style={{border:"1px solid black"}}>{i.result }</td>
+                <td style={{border:"1px solid black"}}>
+                    <button onClick={() => updateData(index)}>UPDATE</button>
                 </td>
-                <td>
-                    <button onClick={() => updateData(i, index)}>UPDATE</button>
+                <td style={{border:"1px solid black"}}>
+                    <button onClick={() => deleteData(i, index)}>DELETE</button>
                 </td>
               </tr>
             ))}
