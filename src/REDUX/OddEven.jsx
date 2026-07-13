@@ -12,13 +12,13 @@ const ButtonUI = () => {
     const Call = useDispatch
   return (
     <div>
-      
+       
             <h1>{no}</h1>
             {/* <h4>{onclick={(0 ? "")}}</h4> */}
             <h2>{no % 2 === 0 ? "EVEN-NUMBER" : "ODD-NUMBER"}</h2>
             <button onClick={() =>dis(increment())}>+++++</button>
-            <button onClick={() =>dis(decrement(1))}>-----</button>
-            {/* <button onClick={() =>dis()()}>SUBMIT-ALL</button> */}
+            <button onClick={() =>dis(decrement(9))}>-----</button>
+            {/* <button onClick={}></button> */}
     </div>
   )
 }

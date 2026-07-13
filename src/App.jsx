@@ -58,8 +58,15 @@ import logo from './logo.svg';
 // import CreateRead from "./UseContext-Hook/CreateRead"
 // import DeleteUpdate from "./UseContext-Hook/DeleteUpdate"
 // import ButtonUI from "./REDUX/ButtonUI"
-import OddEven from "./REDUX/OddEven"
+// import OddEven from "./REDUX/OddEven"
 // import LikeDislike from "./REDUX/LikeDislike"
+// import CreateReadFormikCrud from "./REDUX/CreatReadFormikCrud"
+// import UpdateDelete from "./REDUX/UpdateDelete"
+// import UseMemoEX from "./Hook-useMemo-useRef-useCallback/UseMemoEX"
+// import UseRefEX from "./Hook-useMemo-useRef-useCallback/UseRefEX"
+import UseCallback from "./Hook-useMemo-useRef-useCallback/UseCallback"
+
+
 function App() {
   return (
     <div className="App">
@@ -186,8 +193,13 @@ function App() {
               <DeleteUpdate />
             </CRUDuseContext>*/}
             {/* <ButtonUI></ButtonUI> */}
-            <OddEven></OddEven>
+            {/* <OddEven></OddEven> */}
             {/* <LikeDislike></LikeDislike> */}
+            {/* <CreateReadFormikCrud></CreateReadFormikCrud> */}
+            {/* <UpdateDelete></UpdateDelete> */}
+            {/* <UseMemoEX></UseMemoEX> */}
+            {/* <UseRefEX></UseRefEX> */}
+            <UseCallback></UseCallback>
     </div>
   );
 }

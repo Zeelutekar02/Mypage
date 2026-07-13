@@ -1,13 +1,13 @@
 import { configureStore } from "@reduxjs/toolkit";
 import ReduxSlice from "./Slice"
-import ReduxALL from "./Slice"
 // import LikeSlice from "./Slice"
+import studentReducer from "./FormikSlice"
 
 
 export default configureStore({
     reducer :{
         counter: ReduxSlice,
         // vote : LikeSlice,
-        counter : ReduxALL
+        counter: studentReducer
     },
 })
