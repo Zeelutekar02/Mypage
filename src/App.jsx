@@ -19,7 +19,7 @@ import logo from './logo.svg';
 // import UpdateDelete from './Input-Handle & CRUD/UpdateDelete'
 // import UseFormik from './FormHandle & Yup Errorhandle/UseFormik'
 // import UpdateDeleteFormik from './FormHandle & Yup Errorhandle/UpdateDeleteFormik'
-// import Webrouter from './Router/Webroutser';
+// import Webrouter from './Router/Webrouter';
 // import Header from './Router/Header';
 // import Home from './Router/Home';
 // import About from './Router/About';
@@ -64,8 +64,8 @@ import logo from './logo.svg';
 // import UpdateDelete from "./REDUX/UpdateDelete"
 // import UseMemoEX from "./Hook-useMemo-useRef-useCallback/UseMemoEX"
 // import UseRefEX from "./Hook-useMemo-useRef-useCallback/UseRefEX"
-import UseCallback from "./Hook-useMemo-useRef-useCallback/UseCallback"
-
+// import UseCallback from "./Hook-useMemo-useRef-useCallback/UseCallback"
+import RickMortyApiCalling from "./Rick&Morty--API Calling/RickMortyApiCalling"
 
 function App() {
   return (
@@ -191,7 +191,7 @@ function App() {
             {/* <CRUDuseContext>   
             <CreateRead />
               <DeleteUpdate />
-            </CRUDuseContext>*/}
+            </CRUDuseContext> */}
             {/* <ButtonUI></ButtonUI> */}
             {/* <OddEven></OddEven> */}
             {/* <LikeDislike></LikeDislike> */}
@@ -199,7 +199,8 @@ function App() {
             {/* <UpdateDelete></UpdateDelete> */}
             {/* <UseMemoEX></UseMemoEX> */}
             {/* <UseRefEX></UseRefEX> */}
-            <UseCallback></UseCallback>
+            {/* <UseCallback></UseCallback> */}
+            {/* <RickMortyApiCalling></RickMortyApiCalling> */}
     </div>
   );
 }

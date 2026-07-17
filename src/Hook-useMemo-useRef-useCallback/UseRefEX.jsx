@@ -1,3 +1,4 @@
+import styled from '@emotion/styled';
 import React from 'react'
 import {useRef} from "react";
 
@@ -7,13 +8,14 @@ const UseRefEX = () => {
     const ClickRef = useRef()
 
     const handleChange = () =>{
-        Ref.current.style.color="red"
+        Ref.current.style.color="purple"
     }
 
     const handleClick = () =>{
+        // alert("button click")
         ClickRef.current.style.color="white"
         ClickRef.current.style.backgroundColor="blue"
-    } 
+    }   
 
   return (
     <div>

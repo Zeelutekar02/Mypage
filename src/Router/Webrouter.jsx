@@ -10,7 +10,7 @@ const Webrouter = ({children})=>{
         {/* <Header></Header>  */}
         {/* <Home></Home>
         <About></About> */}
-        {/* <Header /> */}
+        <Header />
         {/* <Home /> */}
         <About />
           {children}
