@@ -28,7 +28,7 @@ const UseFormik = ()=>{
     })
     return(
         <>
-                <div>
+        <div>
         <form onSubmit={f.handleSubmit}>
               <input type="text" name="name" value={f.values.name} id="" onChange={f.handleChange} />
               

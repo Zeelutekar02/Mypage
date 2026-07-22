@@ -65,7 +65,9 @@ import logo from './logo.svg';
 // import UseMemoEX from "./Hook-useMemo-useRef-useCallback/UseMemoEX"
 // import UseRefEX from "./Hook-useMemo-useRef-useCallback/UseRefEX"
 // import UseCallback from "./Hook-useMemo-useRef-useCallback/UseCallback"
-import RickMortyApiCalling from "./Rick&Morty--API Calling/RickMortyApiCalling"
+// import RickMortyApiCalling from "./Rick&Morty--API Calling/RickMortyApiCalling"
+import CategoryWiseSorting from "./Project-Category-wise-sorting/CategoryWiseSorting" 
+import AllData from "./Project-Category-wise-sorting/AllData"
 
 function App() {
   return (
@@ -189,9 +191,9 @@ function App() {
               <Profile />
             </UserProvider> */}
             {/* <CRUDuseContext>   
-            <CreateRead />
+              <CreateRead />
               <DeleteUpdate />
-            </CRUDuseContext> */}
+            </CRUDuseContext>  */}
             {/* <ButtonUI></ButtonUI> */}
             {/* <OddEven></OddEven> */}
             {/* <LikeDislike></LikeDislike> */}
@@ -201,6 +203,9 @@ function App() {
             {/* <UseRefEX></UseRefEX> */}
             {/* <UseCallback></UseCallback> */}
             {/* <RickMortyApiCalling></RickMortyApiCalling> */}
+            <CategoryWiseSorting>
+              <AllData></AllData>
+            </CategoryWiseSorting>
     </div>
   );
 }

@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin: 20px 10px;
+    padding: 10px 15px;
+}
+.Btn{
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    background-color: lavender;
+    color: black;
+    border: 1px dotted black;
+    border-radius: 8px;
+}
+.Btn:hover{
+    background-color: rgb(224, 224, 225);
+    color: black;
+    border: 1px dashed;
+    border-color: black;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+.box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 130px;
+    margin-top: 50px;   
+}
+.div{
+    width: 250px;
+    text-align: center;
+}
+.div h3{
+    height: 40px;  
+    font-size: 16px;
+    font-weight: 700;
+    color: black;
+    margin: 25px;
+    cursor: pointer;
+}
+.image{
+    width: 225px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.image:hover{
+    transform: scale(1.1);
+    transition: 0.6s;
+}
+.p{
+    font-size: 20px;
+    font-weight: 500;
+    margin: 5px 0;
+    margin-top: -15px;
+    color: black; 
+    cursor: pointer;
+}
+.price{
+    font-size: 18px;
+    font-weight: 500;
+    margin: 5px 0;
+    color: black;
+    cursor: pointer;
+}
+.price:hover{
+    transform: scale(1.1);
+    transition: 0.6s;
+}

@@ -21,8 +21,9 @@ const RickMortyApiCalling = () => {
 
               setCharacter(characterData.data.results);
               setLocation(locationData.data.results);
-              setEpisode(episodeData.data.results);
+              setEpisode(episodeData.data.results)
           });
+          
       });
   return (
     <div className="main-box">
@@ -59,7 +60,7 @@ const RickMortyApiCalling = () => {
             </table>
         </div>
          <div className="in-box">
-                <h1 style={{backgroundColor:"lightpink", color:"lightcyan", textAlign:"center", fontSize:"30px", fontWeight:"400"}}>---RICK & MORTY API CALLING---</h1>
+                {/* <h1 style={{backgroundColor:"lightpink", color:"lightcyan", textAlign:"center", fontSize:"30px", fontWeight:"400"}}>---RICK & MORTY API CALLING---</h1> */}
                 <h3 style={{backgroundColor:"lightpink", color:"purple", width:"250px", height:"40px", textAlign:"center", margin:"10px"}}>Location-Data</h3>
                 <table border={1} style={{border:"3px solid purple"}}>
                     <thead style={{border:"2px solid lightpink"}}>
@@ -85,7 +86,7 @@ const RickMortyApiCalling = () => {
                 </table>
             </div>
             <div className="in-box">
-                <h1 style={{backgroundColor:"lightpink", color:"lightcyan", textAlign:"center", fontSize:"30px", fontWeight:"400"}}>---RICK & MORTY API CALLING---</h1>
+                {/* <h1 style={{backgroundColor:"lightpink", color:"lightcyan", textAlign:"center", fontSize:"30px", fontWeight:"400"}}>---RICK & MORTY API CALLING---</h1> */}
                 <h3 style={{backgroundColor:"lightpink", color:"purple", width:"250px", height:"40px", textAlign:"center", margin:"10px"}}>Episode-Data</h3>
                 <table border={1} style={{border:"3px solid purple"}}>
                         <thead style={{border:"2px solid lightpink"}}>
@@ -115,91 +116,3 @@ const RickMortyApiCalling = () => {
 }
 
 export default RickMortyApiCalling
-
-
-
-
-
-
-
-
-
-
-
-// import React, { useEffect, useState } from "react";
-
-// function App() {
-//   const [character, setCharacter] = useState([]);
-//   const [location, setLocation] = useState([]);
-//   const [episode, setEpisode] = useState([]);
-
-//   useEffect(() => {
-//     Promise.all([
-//       fetch("https://rickandmortyapi.com/api/character"),
-//       fetch("https://rickandmortyapi.com/api/location"),
-//       fetch("https://rickandmortyapi.com/api/episode"),
-//     ])
-//       .then((responses) => {
-//         return Promise.all(
-//           responses.map((response) => response.json())
-//         );
-//       })
-//       .then(([characterData, locationData, episodeData]) => {
-//         setCharacter(characterData.results);
-//         setLocation(locationData.results);
-//         setEpisode(episodeData.results);
-//       })
-//       .catch((error) => {
-//         console.log(error);
-//       });
-//   }, []);
-
-//   return (
-//     <div>
-//         <table>
-//             <thead>
-//   <tr>
-//     <th>ID</th>
-//     <th>Name</th>
-//     <th>Status</th>
-//     <th>Species</th>
-//     <th>Type</th>
-//     <th>Gender</th>
-//     <th>Origin</th>
-//     <th>Origin URL</th>
-//     <th>Location</th>
-//     <th>Location URL</th>
-//     <th>Image</th>
-//     <th>Episodes</th>
-//     <th>URL</th>
-//     <th>Created</th>
-//   </tr>
-// </thead>
-//     <tbody>
-//   {character.map((item) => (
-//     <tr key={item.id}>
-//       <td>{item.id}</td>
-//       <td>{item.name}</td>
-//       <td>{item.status}</td>
-//       <td>{item.species}</td>
-//       <td>{item.type}</td>
-//       <td>{item.gender}</td>
-//       <td>{item.origin.name}</td>
-//       <td>{item.origin.url}</td>
-//       <td>{item.location.name}</td>
-//       <td>{item.location.url}</td>
-//       <td>
-//         <img src={item.image} alt={item.name} width="60" />
-//       </td>
-//       <td>{item.episode.length}</td>
-//       <td>{item.url}</td>
-//       <td>{item.created}</td>
-//     </tr>
-//   ))}
-// </tbody>
-//         </table>
-//     </div>
-//   );
-// }
-
-// export default App;
